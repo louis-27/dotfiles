@@ -1,8 +1,8 @@
 # dotfiles
 
-Make sure you have GNU `stow`:
+Install GNU `stow` with homebrew
 ```bash
-brew install stow     -- install GNU stow with homebrew
+brew install stow
 ```
 Create symlinks for every directory
 ```bash
