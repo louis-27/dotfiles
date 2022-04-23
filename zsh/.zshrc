@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Custom aliases
 alias vim="nvim"
+alias dot="cd ~/dotfiles"
 alias cdd="cd ~/Developer"
 
 # nvm - Node Version Manager
