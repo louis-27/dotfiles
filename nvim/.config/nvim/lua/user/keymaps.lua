@@ -67,5 +67,8 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
+-- Formatting (LSP + Null-ls formatting integration. The "Format" keyword is from "lsp/handlers.lua")
+keymap("n", "<leader>p", "<cmd>Format<cr>", opts)
+
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)

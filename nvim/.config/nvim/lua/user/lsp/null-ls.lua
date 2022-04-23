@@ -16,9 +16,11 @@ null_ls.setup {
       --
       -- } 
     },
+    -- formatting.clang_format,
     -- formatting.black.with { extra_args = { "--fast" } },
     -- formatting.yapf,
     -- formatting.stylua,
     -- diagnostics.flake8,
+    diagnostics.eslint,
   },
 }
