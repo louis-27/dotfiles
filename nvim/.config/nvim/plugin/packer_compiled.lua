@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/louis/.local/share/nvim/site/pack/packer/start/night-owl.vim",
     url = "https://github.com/haishanh/night-owl.vim"
   },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/Users/louis/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/louis/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -148,21 +153,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/louis/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
-  },
-  ["nvim-treesitter"] = {
-    loaded = true,
-    path = "/Users/louis/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
-    url = "https://github.com/nvim-treesitter/nvim-treesitter"
-  },
-  ["nvim-ts-context-commentstring"] = {
-    loaded = true,
-    path = "/Users/louis/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
-    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
-  },
-  ["nvim-ts-rainbow"] = {
-    loaded = true,
-    path = "/Users/louis/.local/share/nvim/site/pack/packer/start/nvim-ts-rainbow",
-    url = "https://github.com/p00f/nvim-ts-rainbow"
   },
   ["nvim-web-devicons"] = {
     loaded = true,

@@ -69,9 +69,10 @@ return packer.startup(function(use)
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use "BurntSushi/ripgrep"                -- Required for `live_grep` and `grep_string` in Telescope
+  use "jose-elias-alvarez/null-ls.nvim"   -- for formatters and linters
 
   -- Treesitter
-  use { 
+  use {
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
     requires = {
@@ -81,6 +82,7 @@ return packer.startup(function(use)
   }
 
   -- Appearance
+  use "folke/tokyonight.nvim"
   use "haishanh/night-owl.vim"
   use "onsails/lspkind-nvim"
   use "kyazdani42/nvim-web-devicons"
