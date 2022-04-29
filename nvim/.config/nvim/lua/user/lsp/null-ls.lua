@@ -22,5 +22,6 @@ null_ls.setup {
     -- formatting.stylua,
     -- diagnostics.flake8,
     diagnostics.eslint,
+    -- diagnostics.cppcheck,
   },
 }
