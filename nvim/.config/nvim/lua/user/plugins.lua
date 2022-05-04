@@ -46,7 +46,12 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"
   use "windwp/nvim-autopairs"
   use "numToStr/Comment.nvim"
-  use "kyazdani42/nvim-tree.lua"
+  use {
+    "kyazdani42/nvim-tree.lua",
+    requires = {
+      "kyazdani42/nvim-web-devicons",
+    }
+  }
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
 
@@ -83,10 +88,7 @@ return packer.startup(function(use)
 
   -- Appearance
   use "folke/tokyonight.nvim"
-  use "haishanh/night-owl.vim"
   use "onsails/lspkind-nvim"
-  use "kyazdani42/nvim-web-devicons"
-  use "princejoogie/tailwind-highlight.nvim"
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
