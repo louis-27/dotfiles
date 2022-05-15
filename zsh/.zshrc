@@ -26,3 +26,8 @@ export PATH="/usr/local/sbin:$PATH"
 
 # z - Directory jumping
 . "$HOME/z.sh"
+
+# pnpm
+export PNPM_HOME="/Users/louis/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
