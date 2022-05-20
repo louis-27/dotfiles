@@ -35,25 +35,36 @@ yabai -m config right_padding                12
 yabai -m config window_gap                   06
 yabai -m config external_bar                 all:24:0
 
-# rules
-yabai -m rule --add app="^System Preferences$" manage=off
-yabai -m rule --add app="^Disk Utility$" manage=off
-yabai -m rule --add app="^System Information$" manage=off
-yabai -m rule --add app="^Finder$" manage=off
-yabai -m rule --add app="^Docker$" manage=off
-yabai -m rule --add app="^Spotify$" manage=off
-yabai -m rule --add app="^Discord$" manage=off
-yabai -m rule --add app="^WhatsApp$" manage=off
-yabai -m rule --add app="^LINE$" manage=off
-
 # spaces
 # space 1
-yabai -m rule --add app="iTerm" space=^1 display=2
+yabai -m rule --add app="Google Chrome"         space=1
+yabai -m rule --add app="Safari"                space=1
 # space 2
-yabai -m rule --add app="Code" space=^2
+yabai -m config --space 2 layout stack
+yabai -m rule --add app="Code"                  space=2
+yabai -m rule --add app="iTerm"                 space=2
 # space 3
-yabai -m rule --add app="Google Chrome" space=^3
-yabai -m rule --add app="Slack" space=^3
-yabai -m rule --add app="Mail" space=^3
+yabai -m config --space 3 layout stack
+yabai -m rule --add app="Discord"               space=3
+yabai -m rule --add app="Mail"                  space=3
+yabai -m rule --add app="LINE"                  space=3
+yabai -m rule --add app="Slack"                 space=3
+yabai -m rule --add app="WhatsApp"              space=3
+# space 4
+yabai -m rule --add app="Spotify"               space=4
+
+# ignored
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add label="System Preferences" app="^System Preferences$" title=".*" manage=off
+yabai -m rule --add app="^System Information$" manage=off
+yabai -m rule --add app="^Disk Utility$" manage=off
+yabai -m rule --add app="Activity Monitor" manage=off
+yabai -m rule --add label="Safari" app="^Safari$" title="^(General|(Tab|Password|Website|Extension)s|AutoFill|Se(arch|curity)|Privacy|Advance)$" manage=off
+yabai -m rule --add app="^Docker$" manage=off
+
+# signals
+# refresh my Übersicht bar when the space changes
+yabai -m signal --add event=space_changed \
+    action="osascript -e 'tell application \"Übersicht\" to refresh widget id \"spaces-widget\"'"
 
 echo "yabai configuration loaded.."
