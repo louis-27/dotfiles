@@ -1,6 +1,7 @@
 # open apps
 cmd - return : open -n -a "iTerm"
-cmd + shift - return : open -n -a "Google Chrome"
+cmd + lshift - return : open -n -a "Google Chrome"
+cmd + rshift - return : open -n -a "Safari"
 
 # --- windows ---
 # focus window
