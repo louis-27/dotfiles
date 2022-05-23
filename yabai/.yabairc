@@ -57,7 +57,9 @@ yabai -m config --space 5 layout stack
 yabai -m rule --add app="Height"                space=5
 yabai -m rule --add app="Logseq"                space=5
 yabai -m rule --add app="mymind"                space=5
-yabai -m rule --add app="Spotify"               space=5
+# space 6
+yabai -m config --space 6 layout stack
+yabai -m rule --add app="Spotify"               space=6
 
 # ignored
 yabai -m rule --add app="^Finder$" manage=off
