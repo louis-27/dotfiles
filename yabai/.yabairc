@@ -55,6 +55,7 @@ yabai -m rule --add app="Slack"                 space=4
 yabai -m rule --add app="WhatsApp"              space=4
 # space 5
 yabai -m rule --add app="Height"                space=5
+yabai -m rule --add app="Linear"                space=5
 yabai -m rule --add app="Logseq"                space=5
 yabai -m rule --add app="mymind"                space=5
 # space 6
