@@ -45,7 +45,7 @@ yabai -m rule --add app="Safari"                space=1
 # space 2
 yabai -m rule --add app="Code"                  space=2
 # space 3
-yabai -m rule --add app="iTerm"                 space=3
+yabai -m rule --add app="iTerm2"                space=3
 yabai -m rule --add app="Warp"                  space=3
 # space 4
 yabai -m rule --add app="Discord PTB"           space=4 manage=off

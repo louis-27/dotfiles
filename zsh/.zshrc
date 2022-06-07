@@ -13,6 +13,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Custom aliases
 alias vim="nvim"
+alias vw="vim ~/vimwiki/index.wiki"
 alias dot="cd ~/dotfiles"
 alias cdd="cd ~/Developer"
 
@@ -31,3 +32,4 @@ export PATH="/usr/local/sbin:$PATH"
 export PNPM_HOME="/Users/louis/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+

@@ -54,6 +54,7 @@ return packer.startup(function(use)
   }
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
+  use "vimwiki/vimwiki"         -- Vim Wiki
 
   -- Autocompletion
   use "hrsh7th/nvim-cmp"        -- Completion engine plugin for Neovim written in Lua
