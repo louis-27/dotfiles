@@ -46,14 +46,10 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim"
   use "windwp/nvim-autopairs"
   use "numToStr/Comment.nvim"
-  use {
-    "kyazdani42/nvim-tree.lua",
-    requires = {
-      "kyazdani42/nvim-web-devicons",
-    }
-  }
+  use "kyazdani42/nvim-tree.lua"
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
+  use "nvim-lualine/lualine.nvim"
   use "vimwiki/vimwiki"         -- Vim Wiki
 
   -- Autocompletion
@@ -88,7 +84,9 @@ return packer.startup(function(use)
   }
 
   -- Appearance
+  use "kyazdani42/nvim-web-devicons"
   use "folke/tokyonight.nvim"
+  use "overcache/NeoSolarized"
   use "onsails/lspkind-nvim"
 
   if PACKER_BOOTSTRAP then
