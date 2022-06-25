@@ -72,3 +72,10 @@ keymap("n", "<leader>p", "<cmd>Format<cr>", opts)
 
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+
+-- Competitive Programming --
+-- Compile & Run (Still needs some work. The program just runs on an infinite loop atm.)
+keymap("n", "<F9>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -DONPC -o %:r % && ./%:r <CR>", opts)
+-- Compile & Run (Takes input from input.txt)
+keymap("n", "<F10>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -DONPC -o %:r % && ./%:r < input.txt <CR>", opts)
+

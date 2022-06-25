@@ -26,13 +26,13 @@ null_ls.setup {
   end,
   sources = {
     formatting.prettierd,
-    formatting.clang_format,
+    -- formatting.clang_format,
     formatting.gofmt,
     -- formatting.black.with { extra_args = { "--fast" } },
     -- formatting.yapf,
     -- formatting.stylua,
     -- diagnostics.flake8,
     -- diagnostics.eslint,
-    diagnostics.cppcheck,
+    -- diagnostics.cppcheck,
   },
 }
