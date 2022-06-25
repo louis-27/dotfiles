@@ -74,10 +74,10 @@ keymap("n", "<leader>p", "<cmd>Format<cr>", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Competitive Programming --
--- Compile & Run (The program runs inside Neovim's terminal but does not receive input. https://stackoverflow.com/questions/57920485/cant-give-input-to-programs-ran-in-neovim) (Update: This issue is caused by Neovim disabling its interactive shell. See more: https://github.com/neovim/neovim/issues/1496)
--- keymap("n", "<F9>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -O2 -o %:r % && ./%:r <CR>", opts)
--- Compile
-keymap("n", "<F9>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -O2 -o %:r % <CR>", opts)
--- Compile & Run (Takes input from input.txt instead of Neovim's integrated terminal)
+-- (DOES NOT WORK. Solved with a workaround in line 79-80) Compile & run (Issue: the program runs inside Neovim but does not receive input. https://stackoverflow.com/questions/57920485/cant-give-input-to-programs-ran-in-neovim & https://vi.stackexchange.com/questions/31489/problem-with-compiling-running-a-file-in-neovim) 
+-- keymap("n", "<F9>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -O2 -o %:r % && ./%:r <CR>", opts) -- (Update: This issue is caused by Neovim disabling its interactive shell, causing programs executed inside the bang command (`:!`) to be connected to a pipe instead of the terminal. See more: https://github.com/neovim/neovim/issues/1496)
+-- Compile & run (Workaround to compile & run inside Neovim's interactive shell (opens the compiled program inside `:terminal` instead of the bang command (`:!`)) (Credit: https://vi.stackexchange.com/questions/31489/problem-with-compiling-running-a-file-in-neovim)
+keymap("n", "<F9>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -O2 -o %:r % <CR> :vsplit | execute 'terminal ./%:r' | startinsert <CR>", opts)
+-- Compile & run (Takes input from input.txt)
 keymap("n", "<F10>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -O2 -o %:r % && ./%:r < input.txt <CR>", opts)
 
