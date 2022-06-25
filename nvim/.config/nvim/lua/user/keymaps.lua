@@ -26,10 +26,10 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- Resize with arrows
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+keymap("n", "<S-Up>", ":resize -2<CR>", opts)
+keymap("n", "<S-Down>", ":resize +2<CR>", opts)
+keymap("n", "<S-Left>", ":vertical resize -2<CR>", opts)
+keymap("n", "<S-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
@@ -74,8 +74,10 @@ keymap("n", "<leader>p", "<cmd>Format<cr>", opts)
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Competitive Programming --
--- Compile & Run (Still needs some work. The program just runs on an infinite loop atm.)
-keymap("n", "<F9>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -DONPC -o %:r % && ./%:r <CR>", opts)
--- Compile & Run (Takes input from input.txt)
-keymap("n", "<F10>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -DONPC -o %:r % && ./%:r < input.txt <CR>", opts)
+-- Compile & Run (The program runs inside Neovim's terminal but does not receive input. https://stackoverflow.com/questions/57920485/cant-give-input-to-programs-ran-in-neovim) (Update: This issue is caused by Neovim disabling its interactive shell. See more: https://github.com/neovim/neovim/issues/1496)
+-- keymap("n", "<F9>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -O2 -o %:r % && ./%:r <CR>", opts)
+-- Compile
+keymap("n", "<F9>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -O2 -o %:r % <CR>", opts)
+-- Compile & Run (Takes input from input.txt instead of Neovim's integrated terminal)
+keymap("n", "<F10>", ":w <CR> :!g++ -std=c++17 -Wall -Wextra -Wshadow -O2 -o %:r % && ./%:r < input.txt <CR>", opts)
 

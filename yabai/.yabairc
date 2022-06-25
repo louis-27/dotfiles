@@ -46,6 +46,7 @@ yabai -m rule --add app="Safari"                space=1
 yabai -m config --space 2 layout float
 yabai -m rule --add app="Code"                  space=2
 # space 3
+yabai -m rule --add app="Terminal"              space=3
 yabai -m rule --add app="iTerm2"                space=3
 yabai -m rule --add app="Warp"                  space=3
 # space 4

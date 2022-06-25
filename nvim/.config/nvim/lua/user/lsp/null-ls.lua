@@ -28,6 +28,7 @@ null_ls.setup {
     formatting.prettierd,
     -- formatting.clang_format,
     formatting.gofmt,
+    formatting.prismaFmt,
     -- formatting.black.with { extra_args = { "--fast" } },
     -- formatting.yapf,
     -- formatting.stylua,
