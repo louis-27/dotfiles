@@ -50,6 +50,7 @@ yabai -m rule --add app="Terminal"              space=3
 yabai -m rule --add app="iTerm2"                space=3
 yabai -m rule --add app="Warp"                  space=3
 # space 4
+yabai -m rule --add app="Discord"               space=4
 yabai -m rule --add app="Discord PTB"           space=4 manage=off
 yabai -m rule --add app="Mail"                  space=4
 yabai -m rule --add app="LINE"                  space=4

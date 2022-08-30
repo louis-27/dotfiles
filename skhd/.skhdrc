@@ -1,7 +1,7 @@
 # open apps
-cmd - return : open -n -a "Terminal"
-cmd + lshift - return : open -n -a "Brave Browser"
-cmd + rshift - return : open -n -a "Min"
+cmd - return : open -n -a "iTerm"
+cmd + lshift - return : open -n -a "Google Chrome"
+cmd + rshift - return : open -n -a "Safari"
 
 # --- windows ---
 # focus window
