@@ -23,6 +23,7 @@ alias vim="nvim"
 alias vw="vim ~/vimwiki/index.wiki"
 alias dot="cd ~/dotfiles"
 alias cdd="cd ~/Developer"
+alias lg="lazygit"
 
 # nvm - Node Version Manager
 export NVM_DIR="$HOME/.nvm"

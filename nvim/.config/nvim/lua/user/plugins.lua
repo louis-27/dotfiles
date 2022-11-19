@@ -66,7 +66,8 @@ return packer.startup(function(use)
   
   -- LSP
   use "neovim/nvim-lspconfig"             -- Collection of configurations for the built-in LSP client
-  use "williamboman/nvim-lsp-installer"   -- Easy-to-use language server installer
+  -- use "williamboman/nvim-lsp-installer"   -- Easy-to-use language server installer
+  use "williamboman/mason.nvim"
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"

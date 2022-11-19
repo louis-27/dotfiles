@@ -43,8 +43,14 @@ yabai -m config --space 1 layout float
 yabai -m rule --add app="Google Chrome"         space=1
 yabai -m rule --add app="Safari"                space=1
 # space 2
-yabai -m config --space 2 layout float
-yabai -m rule --add app="Code"                  space=2
+yabai -m rule --add app="Height"                space=2
+yabai -m rule --add app="Linear"                space=2
+yabai -m rule --add app="Logseq"                space=2
+yabai -m rule --add app="mymind"                space=2
+yabai -m rule --add app="Sunsama"               space=2
+# space 2
+# yabai -m config --space 2 layout float
+# yabai -m rule --add app="Code"                  space=2
 # space 3
 yabai -m rule --add app="Terminal"              space=3
 yabai -m rule --add app="iTerm2"                space=3
@@ -57,13 +63,7 @@ yabai -m rule --add app="LINE"                  space=4
 yabai -m rule --add app="Slack"                 space=4
 yabai -m rule --add app="WhatsApp"              space=4
 # space 5
-yabai -m rule --add app="Height"                space=5
-yabai -m rule --add app="Linear"                space=5
-yabai -m rule --add app="Logseq"                space=5
-yabai -m rule --add app="mymind"                space=5
-yabai -m rule --add app="Sunsama"               space=5
-# space 6
-yabai -m rule --add app="Spotify"               space=6
+yabai -m rule --add app="Spotify"               space=5
 
 # ignored
 yabai -m rule --add app="^Finder$" manage=off
